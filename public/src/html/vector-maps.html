@@ -1,0 +1,154 @@
+@SPK@include("partials/main-header.html")
+
+<!-- Vector Map Css -->
+<link rel="stylesheet" href="../assets/libs/jsvectormap/css/jsvectormap.min.css">
+
+</head>
+
+<body class="">
+
+  @SPK@include("partials/switcher.html")
+
+  <div class="page">
+
+    @SPK@include("partials/menu.html")
+
+    @SPK@include("partials/header.html")
+
+    <div class="content">
+
+      <!-- Start::main-content -->
+      <div class="main-content">
+
+        @SPK@include("partials/page-header.html", {"title": "Vector Map", "subtitle": 'Maps'})
+
+        <!-- Start::row-1 -->
+        <div class="grid grid-cols-12 gap-x-5">
+          <div class="col-span-12 xl:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Basic Vector Map</h5>
+              </div>
+              <div class="box-body">
+                <div id="vector-map"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 xl:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Map With Markers</h5>
+              </div>
+              <div class="box-body">
+                <div id="marker-map"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End::row-1 -->
+
+        <!-- Start::row-2 -->
+        <div class="grid grid-cols-12 gap-x-5">
+          <div class="col-span-12 xl:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Map With Image Markers</h5>
+              </div>
+              <div class="box-body">
+                <div id="marker-image-map"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 xl:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Map With Lines</h5>
+              </div>
+              <div class="box-body">
+                <div id="lines-map"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End::row-2 -->
+
+        <!-- Start::row-3 -->
+        <div class="grid grid-cols-12 gap-x-5">
+          <div class="col-span-12 xl:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">US Vector Map</h5>
+              </div>
+              <div class="box-body">
+                <div id="us-map"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 xl:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Russia Vector Map</h5>
+              </div>
+              <div class="box-body">
+                <div id="russia-map"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End::row-3 -->
+
+        <!-- Start::row-4 -->
+        <div class="grid grid-cols-12 gap-x-5">
+          <div class="col-span-12 xl:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Spain Vector Map</h5>
+              </div>
+              <div class="box-body">
+                <div id="spain-map"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 xl:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Canada Vector Map</h5>
+              </div>
+              <div class="box-body">
+                <div id="canada-map"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End::row-4 -->
+
+      </div>
+      <!-- Start::main-content -->
+
+    </div>
+
+    @SPK@include("partials/headersearch_modal.html")
+
+    @SPK@include("partials/footer.html")
+
+  </div>
+
+  @SPK@include("partials/commonjs.html")
+
+  @SPK@include("partials/custom_switcherjs.html")
+
+  <!-- JSVector Maps JS -->
+  <script src="../assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
+
+  <!-- JSVector Maps MapsJS -->
+  <script src="../assets/libs/jsvectormap/maps/world-merc.js"></script>
+  <script src="../assets/js/us-merc-en.js"></script>
+  <script src="../assets/js/russia.js"></script>
+  <script src="../assets/js/spain.js"></script>
+  <script src="../assets/js/canada.js"></script>
+  <script src="../assets/js/jsvectormap.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+@SPK@include("partials/main-header.html")
+
+<!-- Tabulator Css -->
+<link rel="stylesheet" href="../assets/libs/tabulator-tables/css/tabulator.min.css">
+
+<!-- Choices Css -->
+<link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css">
+
+</head>
+
+<body class="">
+
+  @SPK@include("partials/switcher.html")
+
+  <div class="page">
+
+    @SPK@include("partials/menu.html")
+
+    @SPK@include("partials/header.html")
+
+    <div class="content">
+
+      <!-- Start::main-content -->
+      <div class="main-content">
+
+        @SPK@include("partials/page-header.html", {"title": "Edit DataTable", "subtitle": 'Basic Ui'})
+
+        <!-- Start::row-1 -->
+        <div class="grid grid-cols-12 gap-6">
+          <div class="col-span-12">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Edit DataTable</h5>
+              </div>
+              <div class="box-body">
+                <div class="overflow-hidden table-bordered">
+                  <div id="edit-table" class="ti-custom-table ti-striped-table ti-custom-table-hover"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End::row-1 -->
+
+        <!-- Start::row-2 -->
+        <div class="grid grid-cols-12 gap-6">
+          <div class="col-span-12">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Edit with Validation DataTable</h5>
+              </div>
+              <div class="box-body">
+                <div class="overflow-hidden table-bordered">
+                  <div id="validation-table" class="ti-custom-table ti-striped-table ti-custom-table-hover"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End::row-2 -->
+
+      </div>
+      <!-- Start::main-content -->
+
+    </div>
+
+    @SPK@include("partials/headersearch_modal.html")
+
+    @SPK@include("partials/footer.html")
+
+  </div>
+
+  @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+  <!-- Tabulator JS -->
+  <script src="../assets/libs/tabulator-tables/js/tabulator.min.js"></script>
+
+  <!-- Tabulator Custom JS -->
+  <script src="../assets/js/editdata.js"></script>
+
+</body>
+
+</html>

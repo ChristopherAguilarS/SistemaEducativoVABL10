@@ -1,0 +1,328 @@
+@SPK@include("partials/main-header.html")
+
+<!-- Flatpickr Css -->
+<link rel="stylesheet" href="../assets/libs/flatpickr/flatpickr.min.css">
+
+<!-- Color Picker Css -->
+<link rel="stylesheet" href="../assets/libs/@simonwep/pickr/themes/classic.min.css">
+<link rel="stylesheet" href="../assets/libs/@simonwep/pickr/themes/monolith.min.css">
+<link rel="stylesheet" href="../assets/libs/@simonwep/pickr/themes/nano.min.css">
+
+</head>
+
+<body class="">
+
+    @SPK@include("partials/switcher.html")
+
+    <div class="page">
+
+        @SPK@include("partials/menu.html")
+
+        @SPK@include("partials/header.html")
+
+        <div class="content">
+
+            <!-- Start::main-content -->
+            <div class="main-content">
+
+                @SPK@include("partials/page-header.html", {"title": "Advanced Forms", "subtitle": 'Forms'})
+
+
+                <!-- Start::row-1 -->
+                <div class="grid grid-cols-12 gap-x-6">
+                    <div class="col-span-12 lg:col-span-3">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title">Basic Date Picker</h5>
+                            </div>
+                            <div class="box-body">
+                                <div class="flex rounded-sm shadow-sm">
+                                    <div
+                                        class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
+                                        <span class="text-sm text-gray-500 dark:text-white/70"><i
+                                                class="ri ri-calendar-line"></i></span>
+                                    </div>
+
+                                    <input type="text"
+                                        class="ti-form-input ltr:rounded-l-none rtl:rounded-r-none focus:z-10 flatpickr-input"
+                                        id="date" placeholder="Choose date" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-3">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title">Date Time Picker</h5>
+                            </div>
+                            <div class="box-body">
+                                <div class="flex rounded-sm shadow-sm">
+                                    <div
+                                        class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
+                                        <span class="text-sm text-gray-500 dark:text-white/70"><i
+                                                class="ri ri-calendar-line"></i></span>
+                                    </div>
+
+                                    <input type="text"
+                                        class="ti-form-input ltr:rounded-l-none rtl:rounded-r-none focus:z-10 flatpickr-input"
+                                        id="datetime" placeholder="Choose date" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-3">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title">Human Friendly Date Picker</h5>
+                            </div>
+                            <div class="box-body">
+                                <div class="flex rounded-sm shadow-sm">
+                                    <div
+                                        class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
+                                        <span class="text-sm text-gray-500 dark:text-white/70"><i
+                                                class="ri ri-calendar-line"></i></span>
+                                    </div>
+
+                                    <input type="text"
+                                        class="ti-form-input ltr:rounded-l-none rtl:rounded-r-none focus:z-10 flatpickr-input"
+                                        id="humanfrienndlydate" placeholder="Choose date" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-3">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title">Date Range Picker</h5>
+                            </div>
+                            <div class="box-body">
+                                <div class="flex rounded-sm shadow-sm">
+                                    <div
+                                        class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
+                                        <span class="text-sm text-gray-500 dark:text-white/70"><i
+                                                class="ri ri-calendar-line"></i></span>
+                                    </div>
+
+                                    <input type="text"
+                                        class="ti-form-input ltr:rounded-l-none rtl:rounded-r-none focus:z-10 flatpickr-input"
+                                        id="daterange" placeholder="Choose date" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End::row-1 -->
+
+                <!-- Start::row-2 -->
+                <div class="grid grid-cols-12 gap-x-6">
+                    <div class="col-span-12 lg:col-span-3">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title">Basic Time Picker</h5>
+                            </div>
+                            <div class="box-body">
+                                <div class="flex rounded-sm shadow-sm">
+                                    <div
+                                        class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
+                                        <span class="text-sm text-gray-500 dark:text-white/70"><i
+                                                class="ri ri-time-line"></i></span>
+                                    </div>
+
+                                    <input type="text"
+                                        class="ti-form-input ltr:rounded-l-none rtl:rounded-r-none focus:z-10 flatpickr-input"
+                                        id="timepikcr" placeholder="Choose date" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-3">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title"> Time Pickr with 24hr Format </h5>
+                            </div>
+                            <div class="box-body">
+                                <div class="flex rounded-sm shadow-sm">
+                                    <div
+                                        class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
+                                        <span class="text-sm text-gray-500 dark:text-white/70"><i
+                                                class="ri ri-time-line"></i></span>
+                                    </div>
+
+                                    <input type="text"
+                                        class="ti-form-input ltr:rounded-l-none rtl:rounded-r-none focus:z-10 flatpickr-input"
+                                        id="timepikcr1" placeholder="Choose date" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-3">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title"> Time Picker with Limits </h5>
+                            </div>
+                            <div class="box-body">
+                                <div class="flex rounded-sm shadow-sm">
+                                    <div
+                                        class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
+                                        <span class="text-sm text-gray-500 dark:text-white/70"><i
+                                                class="ri ri-time-line"></i></span>
+                                    </div>
+
+                                    <input type="text"
+                                        class="ti-form-input ltr:rounded-l-none rtl:rounded-r-none focus:z-10 flatpickr-input"
+                                        id="limittime" placeholder="Choose date" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-3">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title"> DateTimePicker with Limited Time Range </h5>
+                            </div>
+                            <div class="box-body">
+                                <div class="flex rounded-sm shadow-sm">
+                                    <div
+                                        class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
+                                        <span class="text-sm text-gray-500 dark:text-white/70"><i
+                                                class="ri ri-time-line"></i></span>
+                                    </div>
+
+                                    <input type="text"
+                                        class="ti-form-input ltr:rounded-l-none rtl:rounded-r-none focus:z-10 flatpickr-input"
+                                        id="limitdatetime" placeholder="Choose date" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End::row-2 -->
+
+                <!-- Start::row-3 -->
+                <div class="grid grid-cols-12 gap-x-6">
+                    <div class="col-span-12 lg:col-span-4">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title"> Inline Time Picker </h5>
+                            </div>
+                            <div class="box-body">
+                                <div class=" rounded-sm shadow-sm">
+                                    <input type="text"
+                                        class="ti-form-input focus:z-10 flatpickr-input"
+                                        id="inlinetime" placeholder="Choose date" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title"> Date Picker with week numbers </h5>
+                            </div>
+                            <div class="box-body">
+                                <div class="flex rounded-sm shadow-sm">
+                                    <div
+                                        class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
+                                        <span class="text-sm text-gray-500 dark:text-white/70"><i
+                                                class="ri ri-calendar-line"></i></span>
+                                    </div>
+
+                                    <input type="text"
+                                        class="ti-form-input ltr:rounded-l-none rtl:rounded-r-none focus:z-10 flatpickr-input"
+                                        id="weeknum" placeholder="Choose date" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title"> Preloading time </h5>
+                            </div>
+                            <div class="box-body">
+                                <div class="flex rounded-sm shadow-sm">
+                                    <div
+                                        class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
+                                        <span class="text-sm text-gray-500 dark:text-white/70"><i
+                                                class="ri ri-time-line"></i></span>
+                                    </div>
+
+                                    <input type="text"
+                                        class="ti-form-input ltr:rounded-l-none rtl:rounded-r-none focus:z-10 flatpickr-input"
+                                        id="pretime" placeholder="Choose date" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End::row-3 -->
+
+                <!-- Start::row-4 -->
+                <div class="grid grid-cols-12 gap-x-6">
+                    <div class="col-span-12 lg:col-span-6">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title">Inline Calendar </h5>
+                            </div>
+                            <div class="box-body sm:overflow-hidden overflow-auto">
+                                <div class="rounded-sm">
+                                    <input type="text" class="ti-form-input focus:z-10 flatpickr-input"
+                                        id="inlinecalendar" placeholder="Choose date" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-6">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title"> Color Picker </h5>
+                            </div>
+                            <div class="box-body">
+								<div class="">
+                                    <div class="flex justify-between">
+                                        <div>
+                                            <div class="theme-container"></div>
+                                            <div class="pickr-container text-center"></div>
+                                        </div>
+                                        <div>
+                                            <div class="theme-container1"></div>
+                                            <div class="pickr-container1 text-center"></div>
+                                        </div>
+                                        <div>
+                                            <div class="theme-container2"></div>
+                                            <div class="pickr-container2 text-center"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End::row-4 -->
+
+            </div>
+            <!-- Start::main-content -->
+
+        </div>
+
+        @SPK@include("partials/headersearch_modal.html")
+
+        @SPK@include("partials/footer.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Flatpickr JS -->
+    <script src="../assets/libs/flatpickr/flatpickr.min.js"></script>
+    <script src="../assets/js/flatpickr.js"></script>
+
+    <!-- Color Picker JS -->
+    <script src="../assets/libs/@simonwep/pickr/pickr.es5.min.js"></script>
+    <script src="../assets/js/colorpicker.js"></script>
+
+</body>
+
+</html>

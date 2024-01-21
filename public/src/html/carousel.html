@@ -1,0 +1,419 @@
+@SPK@include("partials/main-header.html")
+
+<!-- Swiper Css -->
+<link rel="stylesheet" href="../assets/libs/swiper/swiper-bundle.min.css">
+
+</head>
+
+<body class="">
+
+  @SPK@include("partials/switcher.html")
+
+  <div class="page">
+
+    @SPK@include("partials/menu.html")
+
+    @SPK@include("partials/header.html")
+
+    <div class="content">
+
+      <!-- Start::main-content -->
+      <div class="main-content">
+
+        @SPK@include("partials/page-header.html", {"title": "Carousel", "subtitle": 'Advanced UI'})
+
+        <!-- Start::row-1 -->
+        <div class="grid grid-cols-12 gap-x-6">
+          <div class="col-span-12 lg:!col-span-4 md:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Basic Swiper Slide</h5>
+              </div>
+              <div class="box-body">
+                <div class="swiper Swiperslide-1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../assets/img/gallery/1.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/2.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/3.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/4.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/5.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/6.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/7.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/8.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/9.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/10.jpg" alt="image"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:!col-span-4 md:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Navigation Swiper Slide</h5>
+              </div>
+              <div class="box-body">
+                <div class="swiper mySwiper1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../assets/img/gallery/1.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/2.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/3.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/4.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/5.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/6.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/7.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/8.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/9.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/10.jpg" alt="image"></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:!col-span-4 md:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Pagination Swiper Slide</h5>
+              </div>
+              <div class="box-body">
+                <div class="swiper mySwiper-page">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../assets/img/gallery/1.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/2.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/3.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/4.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/5.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/6.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/7.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/8.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/9.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/10.jpg" alt="image"></div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:!col-span-4 md:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Pagination Progress Swiper Slide</h5>
+              </div>
+              <div class="box-body">
+                <div class="swiper mySwiper3">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../assets/img/gallery/1.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/2.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/3.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/4.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/5.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/6.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/7.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/8.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/9.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/10.jpg" alt="image"></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:!col-span-4 md:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Scrollbar Swiper Slide</h5>
+              </div>
+              <div class="box-body">
+                <div class="swiper mySwiper4">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../assets/img/gallery/1.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/2.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/3.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/4.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/5.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/6.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/7.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/8.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/9.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/10.jpg" alt="image"></div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:!col-span-4 md:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Vertical Swiper Slide</h5>
+              </div>
+              <div class="box-body">
+                <div class="swiper mySwiper5 !h-[312px]">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../assets/img/gallery/1.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/2.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/3.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/4.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/5.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/6.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/7.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/8.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/9.jpg" alt="image"></div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End::row-1 -->
+
+        <!-- Start::row-2 -->
+        <div class="grid grid-cols-12 gap-x-6">
+        </div>
+        <!-- End::row-2 -->
+
+        <!-- Start::row-3 -->
+        <div class="grid grid-cols-12 gap-x-6">
+          <div class="col-span-12 lg:col-span-4">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Effect Cards Swiper Slide</h5>
+              </div>
+              <div class="box-body">
+                <div class="w-8/12 mx-auto">
+                  <div class="swiper mySwiper12">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="../assets/img/gallery/1.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/2.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/3.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/4.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/5.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/6.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/7.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/8.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/9.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/10.jpg" alt="image"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-4">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Zoom Swiper Slide</h5>
+              </div>
+              <div class="box-body">
+                <div class="w-8/12 mx-auto">
+                  <div class="swiper mySwiper13">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><div class="swiper-zoom-container"><img src="../assets/img/gallery/1.jpg" alt="image"></div></div>
+                      <div class="swiper-slide"><div class="swiper-zoom-container"><img src="../assets/img/gallery/2.jpg" alt="image"></div></div>
+                      <div class="swiper-slide"><div class="swiper-zoom-container"><img src="../assets/img/gallery/3.jpg" alt="image"></div></div>
+                      <div class="swiper-slide"><div class="swiper-zoom-container"><img src="../assets/img/gallery/4.jpg" alt="image"></div></div>
+                      <div class="swiper-slide"><div class="swiper-zoom-container"><img src="../assets/img/gallery/5.jpg" alt="image"></div></div>
+                      <div class="swiper-slide"><div class="swiper-zoom-container"><img src="../assets/img/gallery/6.jpg" alt="image"></div></div>
+                      <div class="swiper-slide"><div class="swiper-zoom-container"><img src="../assets/img/gallery/7.jpg" alt="image"></div></div>
+                      <div class="swiper-slide"><div class="swiper-zoom-container"><img src="../assets/img/gallery/8.jpg" alt="image"></div></div>
+                      <div class="swiper-slide"><div class="swiper-zoom-container"><img src="../assets/img/gallery/9.jpg" alt="image"></div></div>
+                      <div class="swiper-slide"><div class="swiper-zoom-container"><img src="../assets/img/gallery/10.jpg" alt="image"></div></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-4">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Effect Fade Swiper Slide</h5>
+              </div>
+              <div class="box-body">
+                <div class="w-8/12 mx-auto">
+                  <div class="swiper mySwiper8">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="../assets/img/gallery/1.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/2.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/3.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/4.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/5.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/6.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/7.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/8.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/9.jpg" alt="image"></div>
+                      <div class="swiper-slide"><img src="../assets/img/gallery/10.jpg" alt="image"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End::row-3 -->
+
+        <!-- Start::row-4 -->
+        <div class="grid grid-cols-12 gap-x-6">
+          <div class="col-span-12 lg:col-span-4">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Free Mode Swiper Slide</h5>
+              </div>
+              <div class="box-body">
+                <div class="swiper mySwiper9">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../assets/img/gallery/1.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/2.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/3.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/4.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/5.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/6.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/7.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/8.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/9.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/10.jpg" alt="image"></div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-4">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Effect Coverflow Swiper Slide</h5>
+              </div>
+              <div class="box-body">
+                <div class="swiper mySwiper10">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../assets/img/gallery/1.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/2.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/3.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/4.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/5.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/6.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/7.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/8.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/9.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/10.jpg" alt="image"></div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-4">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Effect Flip Swiper Slide</h5>
+              </div>
+              <div class="box-body">
+                <div class="swiper mySwiper11">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../assets/img/gallery/1.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/2.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/3.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/4.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/5.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/6.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/7.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/8.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/9.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/10.jpg" alt="image"></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End::row-4 -->
+
+        <!-- Start::row-5 -->
+        <div class="grid grid-cols-12 gap-x-6">
+          <div class="col-span-12 lg:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Space Between Swiper Slide</h5>
+              </div>
+              <div class="box-body">
+                <div class="swiper mySwiper6">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../assets/img/gallery/1.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/2.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/3.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/4.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/5.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/6.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/7.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/8.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/9.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/10.jpg" alt="image"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-6">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Free Mode Swiper Slide</h5>
+              </div>
+              <div class="box-body">
+                <div class="swiper mySwiper7">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../assets/img/gallery/1.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/2.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/3.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/4.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/5.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/6.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/7.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/8.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/9.jpg" alt="image"></div>
+                    <div class="swiper-slide"><img src="../assets/img/gallery/10.jpg" alt="image"></div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End::row-5 -->
+
+      </div>
+      <!-- Start::main-content -->
+
+    </div>
+
+    @SPK@include("partials/headersearch_modal.html")
+
+    @SPK@include("partials/footer.html")
+
+  </div>
+
+  @SPK@include("partials/commonjs.html")
+
+  @SPK@include("partials/custom_switcherjs.html")
+
+  <!-- Swiper JS -->
+  <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/js/swiper.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+@SPK@include("partials/main-header.html")
+
+<!-- Notifications Css -->
+<link rel="stylesheet" href="../assets/libs/awesome-notifications/style.css">
+
+</head>
+
+<body class="">
+
+  @SPK@include("partials/switcher.html")
+
+  <div class="page">
+
+    @SPK@include("partials/menu.html")
+
+    @SPK@include("partials/header.html")
+
+    <div class="content">
+
+      <!-- Start::main-content -->
+      <div class="main-content">
+
+        @SPK@include("partials/page-header.html", {"title": "Notifications", "subtitle": 'Advanced UI'})
+
+        <!-- Start::row-1 -->
+        <div class="grid grid-cols-12 gap-x-5">
+          <div class="col-span-12 lg:col-span-3">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Basic Notification</h5>
+              </div>
+              <div class="box-body text-center">
+                <button type="button" class="ti-btn ti-btn-primary" id="basic">Basic Notification</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-3">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Async Notification With Error Message</h5>
+              </div>
+              <div class="box-body text-center">
+                <button type="button" class="ti-btn ti-btn-primary" id="async-error">Async Notification</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-3">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Async Notification With Success Message</h5>
+              </div>
+              <div class="box-body text-center">
+                <button type="button" class="ti-btn ti-btn-primary" id="async-success">Async Notification</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-3">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">PopUp Notification</h5>
+              </div>
+              <div class="box-body text-center">
+                <button type="button" class="ti-btn ti-btn-primary" id="popup">Notification</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End::row-1 -->
+
+        <!-- Start::row-2 -->
+        <div class="grid grid-cols-12 gap-x-5">
+          <div class="col-span-12 lg:col-span-3">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Info Notification</h5>
+              </div>
+              <div class="box-body text-center">
+                <button type="button" class="ti-btn  ti-btn-info" id="info">Info Notification</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-3">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Success Notification</h5>
+              </div>
+              <div class="box-body text-center">
+                <button type="button" class="ti-btn  ti-btn-success" id="success">Success Notification</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-3">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Warning Notification</h5>
+              </div>
+              <div class="box-body text-center">
+                <button type="button" class="ti-btn ti-btn-warning" id="warning">Warning Notification</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-3">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Error Notification</h5>
+              </div>
+              <div class="box-body text-center">
+                <button type="button" class="ti-btn ti-btn-danger" id="error">Error Notification</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End::row-2 -->
+
+        <!-- Start::row-3 -->
+        <div class="grid grid-cols-12 gap-x-5">
+          <div class="col-span-12 lg:col-span-3">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Confirmation Notification</h5>
+              </div>
+              <div class="box-body text-center">
+                <button type="button" class="ti-btn  ti-btn-secondary" id="confirm">Notification</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-3">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Async Block With Error Notification</h5>
+              </div>
+              <div class="box-body text-center">
+                <button type="button" class="ti-btn ti-btn-primary" id="async">Notification</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-3">
+            <div class="box">
+              <div class="box-header">
+                <h5 class="box-title">Async Block With Success Notification</h5>
+              </div>
+              <div class="box-body text-center">
+                <button type="button" class="ti-btn ti-btn-primary" id="async-block">Notification</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End::row-3 -->
+      </div>
+      <!-- Start::main-content -->
+
+    </div>
+
+    @SPK@include("partials/headersearch_modal.html")
+
+    @SPK@include("partials/footer.html")
+
+  </div>
+
+  @SPK@include("partials/commonjs.html")
+
+  @SPK@include("partials/custom_switcherjs.html")
+
+  <!-- Rating JS -->
+  <script src="../assets/libs/awesome-notifications/index.var.js"></script>
+  <script src="../assets/js/notifications.js"></script>
+
+</body>
+
+</html>
