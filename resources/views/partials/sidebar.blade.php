@@ -89,26 +89,21 @@
               <!-- End::slide__category -->
 
               <!-- Start::slide -->
-              <li class="slide has-sub">
-                  <a href="javascript:void(0);" class="side-menu__item">
-                      <i class="ri-node-tree side-menu__icon"></i>
-                      <span class="side-menu__label">Modulo Financiero</span>
-                      <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
-                  </a>
-                  <ul class="slide-menu child1">
-                      <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Clas. Presupuestarios<i
-                        class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
-
-                        <ul class="slide-menu child2">
-                            <li class="slide"><a href="javascript:void(0);" class="side-menu__item">Tipo de Transaccion</a>
-                            <li class="slide"><a href="javascript:void(0);" class="side-menu__item">Generica</a>
-                            <li class="slide"><a href="javascript:void(0);" class="side-menu__item">SubGenerica 1</a>
-                            <li class="slide"><a href="javascript:void(0);" class="side-menu__item">SubGenerica 2</a>
-                            <li class="slide"><a href="javascript:void(0);" class="side-menu__item">Especifica 1</a>
-                            <li class="slide"><a href="javascript:void(0);" class="side-menu__item">Especifica 2</a>
-                        </ul>
-                      </li>
-                  </ul>
+              <li class="slide has-sub {{ request()->route()->getPrefix() === 'configuracion/financiero' ? ' active open' : '' }}">
+                <a href="javascript:void(0);" class="side-menu__item {{ request()->route()->getPrefix() === 'configuracion/financiero' ? 'active' : '' }}">
+                    <i class="ri-inbox-line side-menu__icon"></i>
+                    <span class="side-menu__label">Modulo Financiero</span>
+                    <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                </a>
+                <ul class="slide-menu child1">
+                    <li class="slide side-menu__label1"><a href="javascript:void(0)">Financiero</a></li>
+                    <li class="slide"><a href="{{route('tipo-transaccion')}}" class="side-menu__item {{ Route::is('tipo-transaccion','tipo-transaccion/crear','tipo-transaccion/editar') ? 'active':'' }}">Tipo de Transaccion</a>
+                    <li class="slide"><a href="{{route('generica')}}" class="side-menu__item {{ Route::is('generica','generica/crear','generica/editar') ? 'active':'' }}">Generica</a>
+                    <li class="slide"><a href="{{route('sub-generica-nivel-1')}}" class="side-menu__item {{ Route::is('sub-generica-nivel-1','sub-generica-nivel-1/crear','sub-generica-nivel-1/editar') ? 'active':'' }}">SubGenerica 1</a>
+                    <li class="slide"><a href="{{route('sub-generica-nivel-2')}}" class="side-menu__item {{ Route::is('sub-generica-nivel-2','sub-generica-nivel-2/crear','sub-generica-nivel-2/editar') ? 'active':'' }}">SubGenerica 2</a>
+                    <li class="slide"><a href="{{route('especifica-nivel-1')}}" class="side-menu__item {{ Route::is('espeifica-nivel-1','especifica-nivel-1/crear','especifica-nivel-1/editar') ? 'active':'' }}">Especifica 1</a>
+                    <li class="slide"><a href="{{route('especifica-nivel-2')}}" class="side-menu__item {{ Route::is('espeifica-nivel-2','especifica-nivel-2/crear','especifica-nivel-2/editar') ? 'active':'' }}">Especifica 2</a>
+                </ul>
               </li>
               <li class="slide has-sub {{ request()->route()->getPrefix() === 'configuracion/contabilidad' ? ' active open' : '' }}">
                 <a href="javascript:void(0);" class="side-menu__item {{ request()->route()->getPrefix() === 'configuracion/contabilidad' ? 'active' : '' }}">
