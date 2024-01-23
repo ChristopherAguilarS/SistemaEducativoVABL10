@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Livewire\Contable\Cuentas;
+namespace App\Livewire\Contable\Genericas;
 
-use App\Models\Cuenta;
+use App\Models\Generica;
 use Livewire\Component;
 
 class Table extends Component
 {
     public function render()
     {
-        $cuentas = Cuenta::paginate(10);
-        return view('livewire.contable.cuentas.table',['cuentas'=>$cuentas]);
+        $genericas = Generica::paginate(10);
+        return view('livewire.contable.genericas.table',['genericas'=>$genericas]);
     }
 }

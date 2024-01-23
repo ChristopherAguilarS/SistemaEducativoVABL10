@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Contable\Cuentas;
+namespace App\Livewire\Financiero\Genericas;
 
 use Livewire\Component;
 
@@ -8,6 +8,6 @@ class Filtro extends Component
 {
     public function render()
     {
-        return view('livewire.contable.cuentas.filtro');
+        return view('livewire.financiero.genericas.filtro');
     }
 }

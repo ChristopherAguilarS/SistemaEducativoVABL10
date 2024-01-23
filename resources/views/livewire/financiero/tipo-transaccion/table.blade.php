@@ -1,9 +1,9 @@
 <div>
     <div class="box">
         <div class="box-header">
-            <h5 class="box-title">Cuentas</h5>
+            <h5 class="box-title">Tipos de Transacciones</h5>
         </div>
-        <div class="box-body p-0">
+        <div class="p-0 box-body">
             <div class="overflow-auto">
                 <table class="ti-custom-table ti-custom-table-head ti-striped-table">
                     <thead>
@@ -15,23 +15,23 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($cuentas as $cuenta)
+                        @foreach ($tipoTransacciones as $tipoTransaccion)
                             <tr>                
                                 <td class="font-medium">
                                     {{ $loop->index+1 }}
                                 </td>
                                 <td>
-                                    {{ $cuenta->descripcion }}
+                                    {{ $tipoTransaccion->descripcion }}
                                 </td>
                                 <td>
-                                    @if($cuenta->estado == 1)
-                                        <span class="badge bg-green-500 text-white">{{ $cuenta->nEstado }}</span>
+                                    @if($tipoTransaccion->estado == 1)
+                                        <span class="text-white bg-green-500 badge">{{ $tipoTransaccion->nEstado }}</span>
                                     @else
-                                        <span class="badge bg-red-500 text-white">{{ $cuenta->nEstado }}</span>
+                                        <span class="text-white bg-red-500 badge">{{ $tipoTransaccion->nEstado }}</span>
                                     @endif
                                 </td>
                                 <td class="text-center">
-                                    <button type="button" class="ti-btn rounded-full ti-btn-outline ti-btn-outline-danger">
+                                    <button type="button" class="rounded-full ti-btn ti-btn-outline ti-btn-outline-danger">
                                         Editar
                                     </button>
                                 </td>
@@ -40,8 +40,8 @@
                     </tbody>
                 </table>
             </div>
-            <div class="py-1 px-4 mt-5">
-                {{ $cuentas->links() }}
+            <div class="px-4 py-1 mt-5">
+                {{ $tipoTransacciones->links() }}
             </div>
         </div>
     </div>
