@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Livewire\Contable\Cuentas;
+namespace App\Livewire\Financiero\SubGenericaNivel1;
 
-use App\Models\Cuenta;
+use App\Models\SubGenericaNivel1;
 use Livewire\Component;
 
 class Table extends Component
 {
     public function render()
     {
-        $cuentas = Cuenta::paginate(10);
-        return view('livewire.contable.cuentas.table',['cuentas'=>$cuentas]);
+        $subgenericas = SubGenericaNivel1::paginate(10);
+        return view('livewire.financiero.sub-generica-nivel-1.table',['subgenericas'=>$subgenericas]);
     }
 }

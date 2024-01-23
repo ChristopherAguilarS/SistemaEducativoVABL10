@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Livewire\Contable\Cuentas;
+namespace App\Livewire\Financiero\EspecificaNivel1;
 
-use App\Models\Cuenta;
+use App\Models\EspecificaNivel1;
 use Livewire\Component;
 
 class Table extends Component
 {
     public function render()
     {
-        $cuentas = Cuenta::paginate(10);
-        return view('livewire.contable.cuentas.table',['cuentas'=>$cuentas]);
+        $especificas = EspecificaNivel1::paginate(10);
+        return view('livewire.financiero.especifica-nivel-1.table',['especificas'=>$especificas]);
     }
 }

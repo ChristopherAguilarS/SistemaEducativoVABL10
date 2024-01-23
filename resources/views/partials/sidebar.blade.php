@@ -101,8 +101,8 @@
                     <li class="slide"><a href="{{route('generica')}}" class="side-menu__item {{ Route::is('generica','generica/crear','generica/editar') ? 'active':'' }}">Generica</a>
                     <li class="slide"><a href="{{route('sub-generica-nivel-1')}}" class="side-menu__item {{ Route::is('sub-generica-nivel-1','sub-generica-nivel-1/crear','sub-generica-nivel-1/editar') ? 'active':'' }}">SubGenerica 1</a>
                     <li class="slide"><a href="{{route('sub-generica-nivel-2')}}" class="side-menu__item {{ Route::is('sub-generica-nivel-2','sub-generica-nivel-2/crear','sub-generica-nivel-2/editar') ? 'active':'' }}">SubGenerica 2</a>
-                    <li class="slide"><a href="{{route('especifica-nivel-1')}}" class="side-menu__item {{ Route::is('espeifica-nivel-1','especifica-nivel-1/crear','especifica-nivel-1/editar') ? 'active':'' }}">Especifica 1</a>
-                    <li class="slide"><a href="{{route('especifica-nivel-2')}}" class="side-menu__item {{ Route::is('espeifica-nivel-2','especifica-nivel-2/crear','especifica-nivel-2/editar') ? 'active':'' }}">Especifica 2</a>
+                    <li class="slide"><a href="{{route('especifica-nivel-1')}}" class="side-menu__item {{ Route::is('especifica-nivel-1','especifica-nivel-1/crear','especifica-nivel-1/editar') ? 'active':'' }}">Especifica 1</a>
+                    <li class="slide"><a href="{{route('especifica-nivel-2')}}" class="side-menu__item {{ Route::is('especifica-nivel-2','especifica-nivel-2/crear','especifica-nivel-2/editar') ? 'active':'' }}">Especifica 2</a>
                 </ul>
               </li>
               <li class="slide has-sub {{ request()->route()->getPrefix() === 'configuracion/contabilidad' ? ' active open' : '' }}">

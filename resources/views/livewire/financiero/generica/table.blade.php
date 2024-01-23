@@ -1,7 +1,7 @@
 <div>
     <div class="box">
         <div class="box-header">
-            <h5 class="box-title">Cuentas</h5>
+            <h5 class="box-title">Genericas</h5>
         </div>
         <div class="box-body p-0">
             <div class="overflow-auto">
@@ -10,24 +10,28 @@
                         <tr>
                         <th scope="col">N°</th>
                         <th scope="col">Descripcion</th>
+                        <th scope="col">Tipo Transaccion</th>
                         <th scope="col">Estado</th>
                         <th scope="col" class="!text-center">Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($cuentas as $cuenta)
+                        @foreach ($genericas as $generica)
                             <tr>                
                                 <td class="font-medium">
                                     {{ $loop->index+1 }}
                                 </td>
                                 <td>
-                                    {{ $cuenta->descripcion }}
+                                    {{ $generica->descripcion }}
                                 </td>
                                 <td>
-                                    @if($cuenta->estado == 1)
-                                        <span class="badge bg-green-500 text-white">{{ $cuenta->nEstado }}</span>
+                                    {{ optional(optional($generica)->tipo_transaccion)->descripcion }}
+                                </td>
+                                <td>
+                                    @if($generica->estado == 1)
+                                        <span class="badge bg-green-500 text-white">{{ $generica->nEstado }}</span>
                                     @else
-                                        <span class="badge bg-red-500 text-white">{{ $cuenta->nEstado }}</span>
+                                        <span class="badge bg-red-500 text-white">{{ $generica->nEstado }}</span>
                                     @endif
                                 </td>
                                 <td class="text-center">
@@ -41,7 +45,7 @@
                 </table>
             </div>
             <div class="py-1 px-4 mt-5">
-                {{ $cuentas->links() }}
+                {{ $genericas->links() }}
             </div>
         </div>
     </div>
