@@ -6,7 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
-
+        @include('partials.css')
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -34,9 +34,10 @@
         @include('partials.search-modal')
          <!-- Back To Top -->
         <div class="scrollToTop">
-            <span class="arrow"><i class="ri-arrow-up-s-fill text-xl"></i></span>
+            <span class="arrow"><i class="text-xl ri-arrow-up-s-fill"></i></span>
         </div>
 
         <div id="responsive-overlay"></div>
+        @include('partials.js')
     </body>
 </html>
